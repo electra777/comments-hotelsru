@@ -1,2 +1,142 @@
-.test
+*
+  padding: 0
+  margin: 0
+
+*,*:before,*:after
+  box-sizing: border-box
+
+::placeholder
+  color: #777
+
+::selection
+  background-color: #616666
+  color: #fff
+
+body
   font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: 'Barlow', sans-serif
+  overflow-x: hidden
+  color: #101111
+  input, textarea
+    border: #dee2e6 1px solid
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+
+b, strong
+  font-weight: bold
+
+.wrapper
+  position: relative
+  width: 100%
+  max-width: 1920px
+  height: auto
+  margin: 0 auto
+
+.comments
+  max-width: 700px
+  width: 100%
+  padding: 50px 25px
+  margin: 0 auto
+  height: 100%
+
+  &__title
+    margin-bottom: 25px
+    text-align: center
+  &__form
+    margin-bottom: 30px
+  &__form-fieldset
+    padding: 20px
+    border-radius: 5px
+  &__form-legend
+    background-color: #555555
+    color: #ffffff
+    padding: 5px 10px
+  &__form-row:last-of-type
+    display: flex
+    justify-content: space-between
+    align-items: end
+  &__form-label
+    display: inline-block
+    margin-bottom: 5px
+  &__form-text
+    display: block
+    width: 60%
+    font-family: 'Barlow', sans-serif
+    font-size: 14px
+    border-radius: 5px
+    padding: 10px
+    margin-bottom: 10px
+    transition: 0.5s
+  &__form-text:focus
+    box-shadow: 2px 0px 5px 5px #dee2e6
+    transition: 0.5s
+  &__form-message
+    border-radius: 5px
+    font-family: 'Barlow', sans-serif
+    font-size: 14px
+    padding: 10px
+    width: 100%
+    max-width: 600px
+    height: 90px
+    resize: none
+    margin-bottom: 10px
+    transition: 0.5s
+  &__form-message:focus
+    box-shadow: 2px 0px 5px 5px #dee2e6
+    transition: 0.5s
+  &__form-col
+    display: flex
+    flex-direction: column
+  &__form-date
+    border-radius: 5px
+    font-family: 'Barlow', sans-serif
+    font-size: 14px
+    padding: 10px
+    transition: 0.5s
+  &__form-date:focus
+    box-shadow: 2px 0px 5px 5px #dee2e6
+    transition: 0.5s
+  &__form-btn
+    background-color: #555555
+    color: #ffffff
+    padding: 13px 100px
+    border: none
+    font-family: 'Barlow', sans-serif
+    font-size: 14px
+    text-transform: uppercase
+  &__box
+
+  &__box-item
+    margin-bottom: 20px
+  &__box-item-top
+
+  &__box-name
+    font-weight: 600
+    margin-bottom: 5px
+  &__box-date
+    font-size: 14px
+    margin-bottom: 15px
+  &__box-item-text
+    margin-bottom: 15px
+  &__box-item-bottom
+    display: flex
+    gap: 15px
+    justify-content: end
+  &__box-like
+    background-color: #fff
+    border: none
+    cursor: pointer
+    padding: 3px
+  &__box-like.is-active .comments__box-item-svg-like path
+    fill: #000
+  &__box-delete
+    background-color: #fff
+    border: none
+    cursor: pointer
+    padding: 3px
