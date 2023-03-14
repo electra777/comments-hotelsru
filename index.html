@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comments</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="comments">
+      <h1 class="comments__title">Комментарии</h1>
+
+      <form action="" class="comments__form">
+        <fieldset class="comments__form-fieldset">
+          <legend class="comments__form-legend">Введите, что думаете..</legend>
+
+          <div class="comments__form-row">
+            <label for="name" class="comments__form-label">Имя</label>
+            <input type="text" class="comments__form-text" id="name" placeholder="Иван">
+          </div>
+
+          <div class="comments__form-row">
+            <label for="message" class="comments__form-label">Сообщение</label>
+            <textarea name="message" id="message" class="comments__form-message"></textarea>
+          </div>
+
+          <div class="comments__form-row">
+            <div class="comments__form-col">
+              <label for="date" class="comments__form-label">Дата</label>
+              <input type="date" class="comments__form-date" id="date">
+            </div>
+            <div class="comments__form-col">
+              <button class="comments__form-btn">Отправить</button>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+
+
+      <div class="comments__box">
+        <div class="comments__box-item">
+          <div class="comments__box-item-top">
+            <div class="comments__box-name">Вася</div>
+            <div class="comments__box-date">11.01.2023</div>
+          </div>
+          <div class="comments__box-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+            odit maiores nisi, itaque tenetur veritatis quasi delectus adipisci molestiae nemo reprehenderit vel,
+            voluptatem, iusto nulla tempora eligendi! Minima sapiente vel molestiae exercitationem architecto
+            repudiandae recusandae impedit quis asperiores ipsum quas distinctio enim qui rerum nisi quia, culpa aperiam
+            officiis eos totam? Iste sit perspiciatis error eveniet maxime necessitatibus dolorum totam unde aliquid!
+            Nam ad est explicabo? Quo ipsam voluptate repudiandae magnam sapiente rerum tempore, consequatur pariatur
+            iure omnis iste, alias aspernatur aut velit voluptatem corporis rem, aliquam ullam ipsum est nobis!
+            Architecto in ullam fugit illum sequi consequuntur deserunt vel reiciendis error, obcaecati maiores. Iste,
+            officiis quidem. Alias officia vel dolorem commodi labore molestiae earum fugit! Reprehenderit inventore qui
+            error suscipit modi quibusdam earum alias similique sit, facilis, quasi magni quidem numquam sequi.
+            Corporis, commodi.</div>
+          <div class="comments__box-item-bottom">
+            <button class="comments__box-like"></button>
+            <button class="comments__box-delete"></button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
