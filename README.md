@@ -10,4 +10,4 @@ https://electra777.github.io/comments-hotelsru
 - HTML
 - SASS
 
-[<img src="./project.png">]()
+[<img src="./project.png">](./project.png)
