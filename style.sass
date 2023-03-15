@@ -71,11 +71,18 @@ b, strong
     font-size: 14px
     border-radius: 5px
     padding: 10px
-    margin-bottom: 10px
+    margin-bottom: 5px
     transition: 0.5s
+  &__form-text.invalid
+    border-color: red
   &__form-text:focus
     box-shadow: 2px 0px 5px 5px #dee2e6
     transition: 0.5s
+  &__form-text-error
+    opacity: 0
+    color: red
+    font-size: 11px
+    margin-bottom: 10px
   &__form-message
     border-radius: 5px
     font-family: 'Barlow', sans-serif
@@ -85,11 +92,19 @@ b, strong
     max-width: 600px
     height: 90px
     resize: none
-    margin-bottom: 10px
+    margin-bottom: 0px
     transition: 0.5s
+  &__form-message.invalid
+    border-color: red
   &__form-message:focus
     box-shadow: 2px 0px 5px 5px #dee2e6
     transition: 0.5s
+  &__form-message-error
+    opacity: 0
+    color: red
+    font-size: 11px
+    line-height: 1
+    margin-bottom: 10px
   &__form-col
     display: flex
     flex-direction: column
@@ -111,18 +126,24 @@ b, strong
     font-size: 14px
     text-transform: uppercase
   &__box
-
+    display: flex
+    flex-direction: column-reverse
   &__box-item
     margin-bottom: 20px
-  &__box-item-top
-
   &__box-name
     font-weight: 600
     margin-bottom: 5px
   &__box-date
     font-size: 14px
     margin-bottom: 15px
+  &__box-date-day
+    font-weight: 700
+    margin-right: 5px
+    color: #555555
+  &__box-date-time
+    color: #555555
   &__box-item-text
+    overflow: auto
     margin-bottom: 15px
   &__box-item-bottom
     display: flex
@@ -133,7 +154,7 @@ b, strong
     border: none
     cursor: pointer
     padding: 3px
-  &__box-like.is-active .comments__box-item-svg-like path
+  &__box-like.is-liked .comments__box-item-svg-like path
     fill: #000
   &__box-delete
     background-color: #fff
