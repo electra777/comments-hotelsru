@@ -98,20 +98,31 @@ function getTimeComment() {
 
 let btnsLike = document.querySelectorAll('.comments__box-like');
 
-btnsLike.forEach((item) => {
-	item.addEventListener('click', () => {
-		item.classList.toggle('is-liked');
+function changeLike() {
+	btnsLike = document.querySelectorAll('.comments__box-like');
+
+	btnsLike.forEach((item) => {
+		item.addEventListener('click', () => {
+			item.classList.toggle('is-liked');
+		});
 	});
-});
+}
+
+changeLike();
 
 let btnsDelete = document.querySelectorAll('.comments__box-delete');
 
-btnsDelete.forEach((item) => {
-	item.addEventListener('click', () => {
-		item.closest('.comments__box-item').remove();
-		// localStorage.removeItem('comments');
+function deleteComment() {
+	btnsDelete = document.querySelectorAll('.comments__box-delete');
+
+	btnsDelete.forEach((item) => {
+		item.addEventListener('click', () => {
+			item.closest('.comments__box-item').remove();
+		});
 	});
-});
+}
+
+deleteComment();
 
 form.addEventListener('submit', (event) => {
 	event.preventDefault();
@@ -131,6 +142,8 @@ form.addEventListener('submit', (event) => {
 		formMessage.value = '';
 		saveComments();
 		renderComments();
+		changeLike();
+		deleteComment();
 	}
 });
 
